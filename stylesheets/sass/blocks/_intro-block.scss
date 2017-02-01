@@ -1,0 +1,145 @@
+.intro {
+    position: relative;
+    width: 100%;
+    height: 630px;
+    background: url('../../img/bg-intro.png') no-repeat;
+    background-position: -197px -33px;
+    
+    
+}
+
+.intro:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 20px;
+        bottom: 0px;
+        background: url('../../img/delimetr.svg') no-repeat -26px 5px;
+    }
+
+.wrapper-intro {
+    @include clearfix();
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    .head-info {
+        @include clearfix();
+    }
+    
+    .logo {
+        display: inline-block;
+        float: left;
+        vertical-align: middle;
+        
+        img {
+          display: inline-block;
+          vertical-align: middle;
+          width: 66px;
+          height: 66px;  
+          margin-right: 18px;
+        }
+        
+        .logo__text {
+            display: inline-block;
+            color: $nav-color;
+            font-family: "Proxima Nova",sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 27px;
+            text-transform: uppercase;
+        }
+    }
+    
+    .account__btn {
+        float: right;
+        display: inline-block;
+        margin-top: 12px;
+        
+        .reg__btn {
+            position: relative;
+            background-color: transparent;
+            width: 181px;
+            height: 40px;
+            margin-right: 7px;
+            border: 2px solid #ffffff;
+            display: inline-block;
+            padding: 5px 0px 0px 47px;
+            
+            &:before {
+                position: absolute;
+                content: "";
+                width: 16px;
+                height: 18px;
+                top: 10px;
+                left: 23px;
+                background: url('../../img/reg.svg') no-repeat;
+                
+            }
+            
+            &:hover {
+                background: $account__btn_hover;
+                border-color: $account__btn_hover;
+            }
+        }
+        
+        .lk__btn {
+            position: relative;
+            display: inline-block;
+            background-color: transparent;
+            width: 118px;
+            height: 40px;
+            border: 2px solid #ffffff;
+            padding: 5px 0px 0px 47px;
+            
+            &:before {
+                position: absolute;
+                content: "";
+                width: 19px;
+                height: 16px;
+                top: 11px;
+                left: 20px;
+                background: url('../../img/lk.svg') no-repeat;
+            }
+            
+            &:hover {
+                background: $account__btn_hover;
+                border-color: $account__btn_hover;
+            }
+        }
+    }
+           
+}
+
+.intro__title {
+    text-align: center;
+        p {
+            color: #fefeff;
+            font-family: "Proxima Nova",sans-serif;
+            font-size: 72px;
+            font-weight: 700;
+            line-height: 27px;
+            text-transform: uppercase;
+            margin-top: 197px;
+            letter-spacing: -1px;
+        }
+    
+    .subtitle {
+        color: $nav-color;
+        font-family: Roboto;
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 27px;
+        margin-top: -12px;
+        letter-spacing: -0.5px;
+    }
+    
+    .intro-delimetr {
+        width: 161px;
+        height: 2px;
+        background: #ffffff;
+        margin-top: 57px;
+        margin-left: 504px;
+
+    }
+    }

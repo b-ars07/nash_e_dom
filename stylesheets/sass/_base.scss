@@ -1,0 +1,65 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background: $nav-color;
+}
+
+* {
+  box-sizing: border-box;
+  
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p,
+a,
+span,
+div,
+b,
+strong,
+mark,
+small,
+input,
+label,
+textarea,
+h1,h2,h3,h4,h5,h6 {
+	font-family:"PTSans", "PTSerif", "HelveticaNeueCyr", 'Arial', 'sans-serif';
+}
+
+ul {
+  list-style: none; 
+  margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1170px;
+    height: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    color: $nav-color;
+    outline: none;
+    text-decoration: none;
+}
