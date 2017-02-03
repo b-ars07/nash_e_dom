@@ -45,6 +45,11 @@
                 background-color: darken($bg-header, 10%);
                 height: 34px;
             }
+            
+            &_active {
+                background-color: darken($bg-header, 10%);
+                height: 34px;
+            }
         }
     }
 }

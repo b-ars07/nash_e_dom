@@ -193,13 +193,32 @@ template {
 
 @font-face {
   font-family: 'Proxima Nova';
-  src: url("../../fonts/proximanovaregular-webfont.woff2") format("woff2"), url("../../fonts/proximanovaregular-webfont.woff") format("woff");
+  src: url("proximanova-bold-webfont.woff2") format("woff2"), url("proximanova-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Ex Cn';
+  src: url("proximanovaexcn-bold-webfont.woff2") format("woff2"), url("proximanovaexcn-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Ex Cn';
+  src: url("proximanovaexcn-reg-webfont.woff2") format("woff2"), url("proximanovaexcn-reg-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("proximanova-reg-webfont.woff2") format("woff2"), url("proximanova-reg-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 body, html {
   padding: 0;
   margin: 0;
+  height: 100%;
   background: #fff; }
 
 * {
@@ -212,12 +231,23 @@ html {
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased; }
 
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -292px; }
+
+.page-wrap:after {
+  content: "";
+  display: block; }
+
+.footer, .page-wrap:after {
+  height: 292px; }
+
 img {
   max-width: 100%;
   height: auto; }
 
 p, a, span, div, b, strong, mark, small, input, label, textarea, h1, h2, h3, h4, h5, h6 {
-  font-family: "PTSans", "PTSerif", "HelveticaNeueCyr", 'Arial', 'sans-serif'; }
+  font-family: 'Roboto', 'Arial', sans-serif; }
 
 ul {
   list-style: none;
@@ -267,7 +297,25 @@ a {
 
 @font-face {
   font-family: 'Proxima Nova';
-  src: url("../../fonts/proximanovaregular-webfont.woff2") format("woff2"), url("../../fonts/proximanovaregular-webfont.woff") format("woff");
+  src: url("proximanova-bold-webfont.woff2") format("woff2"), url("proximanova-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Ex Cn';
+  src: url("proximanovaexcn-bold-webfont.woff2") format("woff2"), url("proximanovaexcn-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Ex Cn';
+  src: url("proximanovaexcn-reg-webfont.woff2") format("woff2"), url("proximanovaexcn-reg-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("proximanova-reg-webfont.woff2") format("woff2"), url("proximanova-reg-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -312,6 +360,10 @@ a {
   -webkit-transition: all 0.3s 0.01s ease; }
 
 .wrapper__nav .nav__link:hover {
+  background-color: #a30031;
+  height: 34px; }
+
+.wrapper__nav .nav__link_active {
   background-color: #a30031;
   height: 34px; }
 
@@ -415,7 +467,25 @@ a {
 
 @font-face {
   font-family: 'Proxima Nova';
-  src: url("../../fonts/proximanovaregular-webfont.woff2") format("woff2"), url("../../fonts/proximanovaregular-webfont.woff") format("woff");
+  src: url("proximanova-bold-webfont.woff2") format("woff2"), url("proximanova-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Ex Cn';
+  src: url("proximanovaexcn-bold-webfont.woff2") format("woff2"), url("proximanovaexcn-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Ex Cn';
+  src: url("proximanovaexcn-reg-webfont.woff2") format("woff2"), url("proximanovaexcn-reg-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("proximanova-reg-webfont.woff2") format("woff2"), url("proximanova-reg-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -435,15 +505,16 @@ a {
 
 .service-wrap .service-list {
   margin-top: 76px;
-  margin-left: 30px; }
+  margin-left: 30px;
+  display: table;
+  border-spacing: 30px; }
 
 .service-wrap .service-list .service-item {
   position: relative;
   text-align: center;
   width: 350px;
   border: 20px solid #f3f3f3;
-  display: inline-block;
-  margin-right: 30px;
+  display: table-cell;
   padding-bottom: 67px;
   padding-left: 38px;
   padding-right: 38px; }
